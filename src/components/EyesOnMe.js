@@ -1,18 +1,16 @@
 // Code EyesOnMe Component Here
 function EyesOnMe () {
-    handleFocus = () => {
+    function handleFocus (event) {
         console.log("Good!")
     }
-    handleBlur = () => {
+    function handleBlur (event) {
         console.log("Hey! Eyes on me!")
     }
     return (
         <button
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        >Eyes on me
+        onFocus={handleFocus} onBlur={handleBlur}>Eyes on me
         </button>
-    )
+    );
 }
 
 export default EyesOnMe;
